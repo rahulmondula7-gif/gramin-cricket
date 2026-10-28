@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="mr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gramin Cricket | ग्रामीण क्रिकेट स्पर्धा</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero"><nav><a class="brand" href="#top">🏏 Gramin Cricket</a><a class="navlink" href="#register">संघ नोंदणी</a></nav>
+  <div class="hero-content" id="top"><span class="eyebrow">गावाचा अभिमान • मैदानावरची लढत</span><h1>तुमचा संघ मैदानात<br><em>तुमची ओळख गावात!</em></h1><p>ग्रामीण क्रिकेट स्पर्धेसाठी ऑनलाइन संघ नोंदणी करा. बुकिंग आणि वेटिंग लिस्टची स्थिती पाहा.</p><a class="primary" href="#register">संघाची नोंदणी करा ↓</a></div>
+</header>
+<main>
+  <section class="stats"><article><span>नोंदणीकृत संघ</span><strong id="totalCount">—</strong></article><article><span>पुष्टी झालेले</span><strong id="confirmedCount">—</strong></article><article><span>वेटिंग लिस्ट</span><strong id="waitingCount">—</strong></article></section>
+  <section class="section register-grid" id="register"><div><span class="eyebrow dark">TEAM REGISTRATION</span><h2>संघाची नोंदणी</h2><p class="muted">खरी माहिती भरा. नोंदणी यशस्वी झाल्यावर तुमची स्थिती दिसेल.</p>
+  <form id="teamForm"><label>संघाचे नाव *<input name="team_name" required minlength="2" maxlength="100" placeholder="उदा. शिवशक्ती क्रिकेट क्लब"></label><label>गावाचे नाव *<input name="village" required placeholder="तुमच्या गावाचे नाव"></label><label>कर्णधाराचे नाव *<input name="captain_name" required placeholder="पूर्ण नाव"></label><label>कर्णधाराचा मोबाइल नंबर *<input name="mobile" required inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10 अंकी मोबाइल नंबर"></label><label>व्यवस्थापकाचे नाव (ऐच्छिक)<input name="manager_name" placeholder="संघ व्यवस्थापक"></label><button class="primary full" type="submit">नोंदणी सबमिट करा</button><p id="formMessage" role="status"></p></form></div>
+  <aside class="notice"><div class="ball">🏏</div><h3>नोंदणी कशी चालते?</h3><p>स्पर्धेतील उपलब्ध जागांनुसार संघांची पुष्टी होते. जागा भरल्यावर नवीन संघ वेटिंग लिस्टमध्ये जातात.</p><p><strong>महत्त्वाचे:</strong> कर्णधारांचे मोबाइल नंबर या सार्वजनिक पानावर दाखवले जातील. आयोजकांनी ही माहिती सर्वांसाठी उघडी ठेवण्यास संमती घेतली आहे याची खात्री करा.</p><p class="muted small">सध्या आयोजकांची संपर्क माहिती जोडलेली नाही. ती तुमच्या तपशीलांनुसार अपडेट करता येईल.</p></aside></section>
+  <section class="section listings"><div class="section-heading"><div><span class="eyebrow dark">LIVE LIST</span><h2>संघांची यादी</h2><p class="muted">डेटाबेसमधील नोंदणी येथे दिसेल.</p></div><button id="refreshBtn" class="secondary">↻ यादी रिफ्रेश करा</button></div>
+  <div class="tabs"><button class="tab active" data-status="all">सर्व संघ</button><button class="tab" data-status="confirmed">बुकिंग पुष्टी</button><button class="tab" data-status="waiting">वेटिंग लिस्ट</button></div>
+  <div class="table-wrap"><table><thead><tr><th>क्र.</th><th>संघाचे नाव</th><th>गाव</th><th>कर्णधार</th><th>मोबाइल नंबर</th><th>स्थिती</th></tr></thead><tbody id="teamsTable"><tr><td colspan="6" class="empty">डेटा लोड होत आहे…</td></tr></tbody></table></div><p id="listMessage" class="muted small"></p></section>
+</main><footer><strong>🏏 Gramin Cricket</strong><span>गावागावातील क्रिकेटला डिजिटल व्यासपीठ.</span></footer>
+<script src="js/app.js"></script></body></html>
