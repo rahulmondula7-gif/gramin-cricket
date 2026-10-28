@@ -1,5 +1,5 @@
 // Change this URL when deploying the FastAPI backend.
-const API_BASE = 'http://127.0.0.1:8000/api';
+const API_BASE = 'https://gramin-cricket-api.onrender.com/api';
 let currentStatus = 'all';
 const form = document.querySelector('#teamForm');
 const message = document.querySelector('#formMessage');
